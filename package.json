@@ -1,0 +1,27 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Akshyy31/React-Self-Learning-#readme",
+  "bugs": {
+    "url": "https://github.com/Akshyy31/React-Self-Learning-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshyy31/React-Self-Learning-.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
