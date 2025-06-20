@@ -54,10 +54,46 @@ const Header = () => {
   );
 };
 
+const Card = (props) => {
+  let { resData } = props;
+
+  return (
+    <div className="card">
+      <img src="https://truicbusinessideas.com/wp-content/uploads/2024/08/fast-food.jpg" />
+      <h1>{resData.resName}</h1>
+      <h3>{resData.resCusin}</h3>
+      <h4>Rating : 4.4 star</h4>
+    </div>
+  );
+};
+
+let resObj = [
+  { resName: "KFC", resCusin: "Broast", rating: 4.4 },
+  { resName: "Yummy", resCusin: "Burger", rating: 4.0 },
+  { resName: "Kannur", resCusin: "Masala Dosha", rating: 4.1 },
+];
+
+const Body = () => {
+  return (
+    <div className="body-conatiner">
+      <div className="search-container">
+        <label htmlFor="search">Search : </label>
+        <input type="text" id="" name="" />
+      </div>
+      <div className="card-container">
+        <Card resData={resObj[0]} />
+        <Card resData={resObj[1]} />
+        <Card resData={resObj[2]} />
+      </div>
+    </div>
+  );
+};
+
 const Applayout = () => {
   return (
     <div className="appLayout">
       <Header />
+      <Body />
     </div>
   );
 };
